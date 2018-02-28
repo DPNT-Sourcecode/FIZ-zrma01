@@ -18,8 +18,11 @@ public class FizzBuzz {
                 result += " buzz"; //lame
         }
 
+        if (numberString.equals("")){
+            return numberString;
+        }
 
-        return number.toString();
+        return result;
     }
 
 }
