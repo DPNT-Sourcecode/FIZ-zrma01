@@ -18,7 +18,7 @@ public class FizzBuzz {
                 result += "buzz"; //lame
         }
 
-        if (!result.isEmpty() && ( numberString.contains("3") || numberString.contains("5") ) && (number % 3 == 0 || number % 5 == 0)){
+        if (!result.isEmpty() && ( numberString.contains("3") && number % 3 == 0 ) || (numberString.contains("5") && number % 5 == 0)){
             if (number % 2 == 0){
                 result += " deluxe";
             } else {
