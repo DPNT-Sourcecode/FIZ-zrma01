@@ -22,6 +22,7 @@ public class FizzBuzz {
             char[] numberArray = numberString.toCharArray();
             char numberChar = numberArray[0];
             boolean isDeluxe = true;
+
             for (char c : numberArray){
                 if (c != numberChar) {
                     isDeluxe=false;
@@ -32,6 +33,8 @@ public class FizzBuzz {
             if (isDeluxe){
                 if(!result.equals(""))
                     result += " deluxe";
+                else
+                    result +="deluxe";
             }
         }
 
