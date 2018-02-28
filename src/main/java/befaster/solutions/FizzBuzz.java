@@ -18,6 +18,14 @@ public class FizzBuzz {
                 result += "buzz"; //lame
         }
 
+        if (!result.isEmpty() && ( numberString.contains("3") || numberString.contains("5") ) ){
+            if (number % 2 == 0){
+                result += " deluxe";
+            } else {
+                result += " fake deluxe";
+            }
+        }
+
 //        if (number > 10){
 //            char[] numberArray = numberString.toCharArray();
 //            char numberChar = numberArray[0];
