@@ -4,17 +4,20 @@ public class FizzBuzz {
 
     public static String fizzBuzz(Integer number) {
 
-        if (number % 5 == 0 && number %3 == 0){
-            return "fizz buzz";
+        String result = "";
+        String numberString = number.toString();
+
+        if (number % 3 == 0 || numberString.contains("3")){
+            result += "fizz";
         }
 
-        if (number % 3 == 0){
-            return "fizz";
+        if (number % 5 == 0 || numberString.contains("5")){
+            if(!numberString.equals(""))
+                result += "buzz";
+            else
+                result += " buzz"; //lame
         }
 
-        if (number % 5 == 0){
-            return "buzz";
-        }
 
         return number.toString();
     }
