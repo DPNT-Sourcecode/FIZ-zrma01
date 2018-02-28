@@ -14,16 +14,21 @@ public class FizzBuzzTest {
 
     @Test
     public void fizz() {
-        assertThat(FizzBuzz.fizzBuzz(3), equalTo("fizz"));
+        assertThat(FizzBuzz.fizzBuzz(31), equalTo("fizz"));
     }
 
     @Test
     public void buzz() {
-        assertThat(FizzBuzz.fizzBuzz(5), equalTo("buzz"));
+        assertThat(FizzBuzz.fizzBuzz(55), equalTo("buzz"));
     }
 
     @Test
     public void fizzBuzz() {
         assertThat(FizzBuzz.fizzBuzz(15), equalTo("fizz buzz"));
+    }
+
+    @Test
+    public void fizzBuzz2(){
+        assertThat(FizzBuzz.fizzBuzz(53), equalTo("fizz buzz"));
     }
 }

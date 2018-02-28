@@ -12,13 +12,13 @@ public class FizzBuzz {
         }
 
         if (number % 5 == 0 || numberString.contains("5")){
-            if(!numberString.equals(""))
-                result += "buzz";
+            if(!result.equals(""))
+                result += " buzz";
             else
-                result += " buzz"; //lame
+                result += "buzz"; //lame
         }
 
-        if (numberString.equals("")){
+        if (result.equals("")){
             return numberString;
         }
 
