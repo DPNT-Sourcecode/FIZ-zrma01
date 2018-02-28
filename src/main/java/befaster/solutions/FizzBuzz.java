@@ -30,11 +30,20 @@ public class FizzBuzz {
                 }
             }
 
-            if (isDeluxe){
-                if(!result.equals(""))
-                    result += " deluxe";
-                else
-                    result +="deluxe";
+            if (number % 2 == 0){
+                if (isDeluxe){
+                    if(!result.equals(""))
+                        result += " fake deluxe";
+                    else
+                        result +="fake deluxe";
+                }
+            } else {
+                if (isDeluxe) {
+                    if (!result.equals(""))
+                        result += " deluxe";
+                    else
+                        result += "deluxe";
+                }
             }
         }
 

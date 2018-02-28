@@ -47,4 +47,14 @@ public class FizzBuzzTest {
         assertThat(FizzBuzz.fizzBuzz(11), equalTo("deluxe"));
     }
 
+    @Test
+    public void deluxe_odd(){
+        assertThat(FizzBuzz.fizzBuzz(22), equalTo("fake deluxe"));
+    }
+
+    @Test
+    public void deluxe_odd_fizz(){
+        assertThat(FizzBuzz.fizzBuzz(66), equalTo("fizz fake deluxe"));
+    }
+
 }
