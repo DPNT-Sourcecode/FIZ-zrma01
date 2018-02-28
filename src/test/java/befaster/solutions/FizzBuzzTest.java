@@ -56,5 +56,4 @@ public class FizzBuzzTest {
     public void deluxe_odd_fizz(){
         assertThat(FizzBuzz.fizzBuzz(66), equalTo("fizz fake deluxe"));
     }
-
 }
