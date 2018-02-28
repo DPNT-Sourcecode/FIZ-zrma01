@@ -18,34 +18,34 @@ public class FizzBuzz {
                 result += "buzz"; //lame
         }
 
-        if (number > 10){
-            char[] numberArray = numberString.toCharArray();
-            char numberChar = numberArray[0];
-            boolean isDeluxe = true;
-
-            for (char c : numberArray){
-                if (c != numberChar) {
-                    isDeluxe=false;
-                    break;
-                }
-            }
-
-            if (number % 2 != 0){
-                if (isDeluxe){
-                    if(!result.equals(""))
-                        result += " fake deluxe";
-                    else
-                        result +="fake deluxe";
-                }
-            } else {
-                if (isDeluxe) {
-                    if (!result.equals(""))
-                        result += " deluxe";
-                    else
-                        result += "deluxe";
-                }
-            }
-        }
+//        if (number > 10){
+//            char[] numberArray = numberString.toCharArray();
+//            char numberChar = numberArray[0];
+//            boolean isDeluxe = true;
+//
+//            for (char c : numberArray){
+//                if (c != numberChar) {
+//                    isDeluxe=false;
+//                    break;
+//                }
+//            }
+//
+//            if (number % 2 != 0){
+//                if (isDeluxe){
+//                    if(!result.equals(""))
+//                        result += " fake deluxe";
+//                    else
+//                        result +="fake deluxe";
+//                }
+//            } else {
+//                if (isDeluxe) {
+//                    if (!result.equals(""))
+//                        result += " deluxe";
+//                    else
+//                        result += "deluxe";
+//                }
+//            }
+//        }
 
         if (result.equals("")){
             return numberString;
