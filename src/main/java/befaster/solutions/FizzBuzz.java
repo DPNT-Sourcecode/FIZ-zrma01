@@ -18,6 +18,23 @@ public class FizzBuzz {
                 result += "buzz"; //lame
         }
 
+        if (number > 10){
+            char[] numberArray = numberString.toCharArray();
+            char numberChar = numberArray[0];
+            boolean isDeluxe = true;
+            for (char c : numberArray){
+                if (c != numberChar) {
+                    isDeluxe=false;
+                    break;
+                }
+            }
+
+            if (isDeluxe){
+                if(!result.equals(""))
+                    result += " deluxe";
+            }
+        }
+
         if (result.equals("")){
             return numberString;
         }
